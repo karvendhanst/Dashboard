@@ -1,0 +1,160 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Topbar */
+.top_bar{
+    background-color: #DC6F92;
+}
+.top_bar p{
+    margin-top: 10px;
+}
+/* Bottombar */
+.bottom_bar{
+    background-color: #006DBF;
+    flex-wrap: wrap;
+}
+.bottom_bar h3{
+    font-size: 1.6rem;
+}
+.bottom_bar-search input{
+    border: none;
+    outline: none;
+    padding: 3px 5px;
+    margin-top: 5px;
+}
+.notification, .setting, .bracket{
+    padding: 5px 10px;
+    border: 2px solid #222;
+    cursor: pointer;
+}
+.notification{
+    position: relative;
+}
+.notification i{
+    margin-right: 4px;
+}
+.notification sup{
+    position: absolute;
+    top: 9px;
+    right: 7px;
+}
+
+/* main */
+.profile_card{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    min-height: 400px;
+    margin-bottom: 20px;
+}
+.profile_user-info{
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+}
+.profile_card-img{
+    width: 130px;
+}
+.profile_card-img img{
+    width: 100%;
+}
+.profile_card-content{
+    line-height: 1;
+}
+.profile_name, .profile_inr{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.date-creation{
+    line-height: 2;
+}
+.profile_card-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.profile_box{
+    background-color: #d9e9f5;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    width: 115px;
+    height: 100px;
+}
+.profile_box-no p{
+    font-weight: 600;
+    color: #205294;
+}
+.profile_box-text{
+    font-size: .8rem;
+}
+.add_asset, .sign-btn{
+    background-color: crimson;
+    font-weight: 600;
+    font-size: .8rem;
+    color: #fff;
+}
+.add_asset:hover, .sign-btn:hover{
+    background-color: crimson;
+    color: #fff;
+}
+
+.signatory_card{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    min-height: 400px;
+}
+.sign_title{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.signatory_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.signatory_box-card{
+    text-align: center;
+    background-color: #d9e9f5;
+    margin-top: 20px;
+    width: 155px;
+
+}
+.sign_card-img{
+    width: 80px;
+    margin:  0 auto;
+}
+.sign_card-img img{
+    width: 100%;
+}
+.sign_name{
+    font-size: 1rem;
+    margin: 15px 0;
+    color: #205294;
+}
+.sign_text{
+    line-height: .5;
+}
+.sign_text p{
+    font-size: .9rem;
+}
+
+@media screen and (max-width: 462px) {
+    .bottom_bar{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px 0;
+    }
+    .signatory_box-card{
+        width: 100%;
+    }
+}
